@@ -1,0 +1,55 @@
+﻿@import "Variables.less";
+body {
+    margin:0;
+}
+.header {
+    height: 10vh;
+    cursor: pointer;
+    //background-color: bisque;
+    .header-visible {
+        background-color: transparent;
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+        align-items: flex-start;
+        height: 10vh;
+
+        #logo_div {
+            width: 20vw;
+            padding-left: 1vw;
+        }
+
+        #menuItem_div {
+            width: 80vw;
+        }
+
+        .logo {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            margin-left: auto;
+            list-style: none;
+            justify-content: flex-end;
+            font-size: @max_font;
+
+            li {
+                padding: 15px;
+                cursor: pointer;
+
+                a {
+                    color: @dark_stale;
+                    text-decoration: none;
+                    font-family: @font_family;
+
+                    &:hover {
+                        color: @light_stale;
+                    }
+                }
+            }
+        }
+    }
+}

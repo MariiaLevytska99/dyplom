@@ -1,0 +1,33 @@
+﻿@model Quizz.Models.User
+@{
+    ViewBag.Title = "Login";
+}
+@section Styles {
+    <link href="@Url.Content("~/Content/LoginPage.css")" rel="stylesheet" type="text/css" />
+}
+@using (Html.BeginForm())
+{
+    <div class="centered_block">
+        <hr />
+        <div>
+            @Html.LabelFor(model => model.Email)
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email, "")
+            </div>
+        </div>
+        <div>
+            @Html.LabelFor(model => model.Password)
+            <div class=" col-md-10">
+                @Html.EditorFor(model => model.Password)
+                @Html.ValidationMessageFor(model => model.Password, "")
+            </div>
+        </div>
+        <div>
+            <div>
+                <input type="submit" value="Login" />
+                @Html.ActionLink("Don't have an account?", "Registration", "Authorization")
+            </div>
+        </div>
+    </div>
+}

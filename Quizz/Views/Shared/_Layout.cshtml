@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    <link href="@Url.Content("~/Content/LoginPage.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Header.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/Footer.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Content/font-awesome.min.css")" rel="stylesheet" />
+    <link href="@Url.Content("~/Content/GuestPage.css")" rel="stylesheet" type="text/css" />
+
+    @RenderSection("Styles", false)
+
+    @Scripts.Render("~/bundles/modernizr")
+</head>
+<body>
+    <div class="header">
+        <div>
+            <div class="header-visible">
+                <div id="logo_div">
+                    <img class="logo" src="~/Assets/logo.png" alt="logo" onclick="location.href = @Url.Action("Index", "Home")" />
+                </div>
+                <div id="menuItem_div">
+                    <ul>
+                        <li></li>
+                        <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li>@Html.ActionLink("About", "About", "Home")</li>
+                        <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                        <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                        <li>@Html.ActionLink("Login", "Login", "Authorization")</li>
+                    </ul>
+                </div>
+            </div>
+            <!--
+            <div class="header">
+                <ul>
+                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
+                    <li>@Html.ActionLink("About", "About", "Home")</li>
+                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
+                    <li>@Html.ActionLink("Users", "Index", "Users")</li>
+                    <li>@Html.ActionLink("Login","Login", "Authorization")</li>
+                </ul>
+            </div>
+                -->
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+    <footer class="footer">
+        <div class=" footer_container">
+            <div class="socialNetworks_box">
+                <div class="item">
+                    <a class="social_icon" href="">
+                        <span class="border_link">
+                            <i class="fa fa-twitter"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="social_icon" href="">
+                        <span class="border_link">
+                            <i class="fa fa-instagram"></i>
+                        </span>
+                    </a>
+                </div>
+                <div class="item">
+                    <a class="social_icon" href="">
+                        <span class="border_link">
+                            <i class="fa fa-facebook"></i>
+                        </span>
+                    </a>
+                </div>
+
+
+            </div>
+            <div class="footer_sign">
+                <p>© 2019 QuizzMode. All rights reserved.</p>
+            </div>
+        </div>
+
+    </footer>
+    @Scripts.Render("~/bundles/jquery")
+    @RenderSection("scripts", required: false)
+</body>
+</html>

@@ -1,0 +1,64 @@
+﻿@import "Variables.less";
+.footer {
+    background-color: @dark_stale;
+    table-layout: fixed;
+
+    .socialNetworks_box {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .item {
+            padding: 1em;
+
+            &:hover {
+
+                .social_icon {
+                    color: @gold;
+                    border-color: @gold;
+
+                    .border_link {
+                        color: @gold;
+                    }
+                }
+
+                color: @gold;
+            }
+
+            .social_icon {
+                background-color: rgba(0,0,0,0);
+                font-size: 18px;
+                padding: 0.5em;
+                border-style: solid;
+                border-width: 1px 1px 1px 1px;
+                border-color: @light_stale;
+                border-radius: 50%;
+
+                i {
+                    font-size: @max_font;
+                    width: 20px;
+                }
+
+                .border_link {
+                    top: -10000em;
+                    width: 1px;
+                    height: 1px;
+                    padding: 0;
+                    overflow: hidden;
+                    clip: rect(0,0,0,0);
+                    border: 0;
+                    color: @light_stale;
+                }
+            }
+        }
+    }
+
+    .footer_sign {
+        font-size: @max_font;
+        color: @light_stale;
+        text-align: center;
+    }
+}
+
