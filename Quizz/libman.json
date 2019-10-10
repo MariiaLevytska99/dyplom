@@ -5,6 +5,18 @@
     {
       "library": "font-awesome@5.11.2",
       "destination": "lib/font-awesome/"
+    },
+    {
+      "library": "bootstrap.native@2.0.27",
+      "destination": "lib/bootstrap.native/"
+    },
+    {
+      "library": "jquery@3.4.1",
+      "destination": "lib/jquery/"
+    },
+    {
+      "library": "jquery-ui-map@3.0-rc1",
+      "destination": "lib/jquery-ui-map/"
     }
   ]
 }

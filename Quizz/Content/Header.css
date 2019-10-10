@@ -4,6 +4,7 @@
 .header {
   height: 10vh;
   cursor: pointer;
+  padding-bottom: 5vh;
 }
 .header .header-visible {
   background-color: transparent;

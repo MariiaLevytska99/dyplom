@@ -1,11 +1,18 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
-<link href="@Url.Content("~/Content/GuestPage.css")" rel="stylesheet" type="text/css" />
-
 <div class="container_guest">
-    <h1>jkfhguiehgi</h1>
-    <h1>klhfuigheruioh</h1>
-    <h1>fhjkghuighe</h1>
-    <h1>jkdgguerui</h1>
+    <div class="menu_container">
+        <div class="menu_item">
+            <h1 id="about">@Html.ActionLink("About us", "About", "Home")</h1>
+        </div>
+        <div class="menu_item">
+            <h1 id="contact">@Html.ActionLink("Contact", "Contact", "Home")</h1>
+        </div>
+        <div class="menu_item">
+
+            <h1 id="join">@Html.ActionLink("Join", "Login", "Authorization")</h1>
+        </div>
+
+    </div>
 </div>

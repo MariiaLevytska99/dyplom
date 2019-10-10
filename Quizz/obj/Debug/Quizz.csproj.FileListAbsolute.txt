@@ -79,8 +79,8 @@ C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\bin\System.Web.WebPages.Razor.
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\bin\Newtonsoft.Json.xml
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\bin\Antlr3.Runtime.pdb
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.csprojAssemblyReference.cache
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.csproj.CoreCompileInputs.cache
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.csproj.CopyComplete
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.dll
 C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.pdb
+C:\Users\Mariia.Levytska\source\repos\Quizz\Quizz\obj\Debug\Quizz.csprojAssemblyReference.cache

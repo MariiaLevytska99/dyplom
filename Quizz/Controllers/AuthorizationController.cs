@@ -24,6 +24,7 @@ namespace Quizz.Controllers
 
             return View();
         }
+
         public ActionResult Registration()
         {
             ViewBag.Message = "Your login page";
@@ -94,47 +95,6 @@ namespace Quizz.Controllers
             return RedirectToAction("Login");
  
         }
-      /*  [HttpPost]
-        public ActionResult Enter(User user)
-        {
-          if(ModelState.IsValid)
-            {
-                using (QuizzDbContext db = new QuizzDbContext())
-                {
-                    var obj = db.Users.Where(u => u.Email.Equals(user.Email) && u.Password.Equals(user.Password)).FirstOrDefault();
-                    if(obj != null)
-                    {
-                        return RedirectToAction("Registration");
-                    }
-                }
-            }
-           return View(user);
-           // return View();
-        }*/
-        // GET: Users/Edit/5
-        /*  public ActionResult Edit(int? id)
-          {
-              if (id == null)
-              {
-                  return new HttpStatusCodeResult(HttpStatusCode.BadRequest);
-              }
-              User user = db.Users.Find(id);
-              if (user == null)
-              {
-                  return HttpNotFound();
-              }
-              return View(user);
-          }*/
-
-       /* public ActionResult Edit([Bind(Include = "User_ID,Firstname,LastName,Email,Password")] User user)
-        {
-            if (ModelState.IsValid)
-            {
-                db.Entry(user).State = EntityState.Modified;
-                db.SaveChanges();
-                return RedirectToAction("Index");
-            }
-            return View(user);
-        }*/
+     
     }
 }
